@@ -2,7 +2,7 @@
   "name": "muvani",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://muvani.store/",
+  "homepage": "https://ddkits.github.io/muvani/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
