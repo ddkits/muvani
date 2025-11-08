@@ -2,19 +2,22 @@
   "name": "muvani",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://muvani.store/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.28.0",
-    "react-helmet-async": "^1.3.0"
+    "react-helmet-async": "^1.3.0",
+    "react-router-dom": "^6.28.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.0",
+    "gh-pages": "^6.3.0",
     "vite": "^7.2.2"
   }
 }
