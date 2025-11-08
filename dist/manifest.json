@@ -1,0 +1,16 @@
+{
+  "name": "MUVANI \u2013 Division of Reallexi LLC",
+  "short_name": "MUVANI",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#F6EDE1",
+  "theme_color": "#1D4C4F",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

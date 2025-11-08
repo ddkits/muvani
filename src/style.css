@@ -1,0 +1,22 @@
+:root {
+  --deep-teal: #1D4C4F;
+  --mustard: #E7B94B;
+  --coral: #E77951;
+  --cream: #F6EDE1;
+  --fuchsia: #E75D7E;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3a800;
+  color: #0a3f3a;
+  text-align: center;
+}
+.header {
+  padding: 50px 20px;
+}
+.header-logo {
+  width: 140px;
+  margin-bottom: 15px;
+}
