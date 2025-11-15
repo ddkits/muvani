@@ -1,0 +1,56 @@
+/* Glass Navbar */
+.glass-navbar {
+  background: rgba(0, 0, 0, 0.35) !important;
+  backdrop-filter: blur(14px) saturate(160%);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  box-shadow: 0 4px 25px rgba(0,0,0,0.15);
+  border-bottom: 1px solid rgba(255,255,255,0.18);
+  padding: 10px 0 !important;
+  z-index: 9999;
+}
+
+/* Nav Links */
+.nav-link {
+  color: var(--brand-soft) !important;
+  font-weight: 500;
+  margin-left: 8px;
+  margin-right: 8px;
+  transition: 0.25s ease;
+  padding: 8px 12px !important;
+}
+
+.nav-link:hover {
+  color: var(--brand-love) !important;
+  transform: translateY(-1px);
+}
+
+.nav-link.active {
+  color: var(--brand-highlight) !important;
+  font-weight: 600;
+}
+
+/* Brand */
+.brand-title {
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  color: var(--brand-soft);
+}
+
+.brand-sub {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.75);
+}
+
+.logo-shadow {
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(255,255,255,0.4);
+}
+
+/* Toggler */
+.custom-toggler .navbar-toggler-icon {
+  filter: invert(100%);
+}
+
+.custom-toggler {
+  box-shadow: none !important;
+}

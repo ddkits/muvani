@@ -1,8 +1,10 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
+import PageWrapper from '../components/PageWrapper'
+
 export default function FAQ(){
   return (
-    <section className="section container">
+    <PageWrapper>
       <Helmet>
         <title>FAQ – MUVANI</title>
         <meta name="description" content="Answers about orders, shipping, returns, and more." />
@@ -17,11 +19,13 @@ export default function FAQ(){
         <meta name="twitter:description" content="Answers about orders, shipping, returns, and more." />
         <meta name="twitter:image" content="https://muvani.store/logo.png" />
       </Helmet>
+      <section className="section container">
       <h2>FAQ</h2>
       <p><strong>When will my order ship?</strong> Most orders ship within 2–3 business days.</p>
       <p><strong>Do you offer gift notes?</strong> Yes — add your note at checkout and we’ll include a printed card.</p>
       <p><strong>Can I return an item?</strong> See our <a href="#/shipping">Shipping & Returns</a> page.</p>
-    </section>
+   </section>
+    </PageWrapper>
   )
 }
 
