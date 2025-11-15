@@ -1,0 +1,35 @@
+:root {
+  /* ---- MUVANI BRAND CORE COLORS ---- */
+  --color-teal:     #1D4C4F; /* Elegant / Logo Teal */
+  --color-mustard:  #E9B44C; /* Maximalist Yellow */
+  --color-coral:    #E77951; /* Organic Coral */
+  --color-cream:    #F6EDE1; /* Soft Neutral */
+  --color-fuchsia:  #E75D7E; /* Accent Pink */
+
+  /* ---- EXTENDED BRAND SYSTEM (optional but recommended) ---- */
+  --color-teal-light:   #2F6F73;
+  --color-teal-dark:    #143638;
+
+  --color-coral-light:  #F28B67;
+  --color-coral-dark:   #C66041;
+
+  --color-mustard-light:#F3C86A;
+  --color-mustard-dark: #C79533;
+
+  --color-fuchsia-light:#F27694;
+  --color-fuchsia-dark: #C94A66;
+
+  --color-cream-dark:   #E8DFD2;
+
+  /* ---- Semantic Tokens (highly recommended) ---- */
+  --brand-primary:   var(--color-teal);
+  --brand-accent:    var(--color-coral);
+  --brand-highlight: var(--color-mustard);
+  --brand-soft:      var(--color-cream);
+  --brand-love:      var(--color-fuchsia);
+
+  /* Buttons, borders, shadows */
+  --border-soft:    color-mix(in srgb, var(--color-teal) 12%, transparent);
+  --shadow-soft:    0 6px 20px color-mix(in srgb, var(--color-teal) 10%, transparent);
+  --shadow-strong:  0 14px 30px color-mix(in srgb, var(--color-teal) 18%, transparent);
+}

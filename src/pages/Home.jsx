@@ -1,37 +1,49 @@
-import React from 'react'
-import { Helmet } from 'react-helmet-async'
-export default function Home(){
+import React from "react";
+import { Helmet } from "react-helmet-async";
+import PageWrapper from "../components/PageWrapper";
+import Hero from "../components/Hero";
+import PatternStrip from "../components/PatternStrip";
+import "./home.css"
+
+export default function Home() {
   return (
-    <div>
+    <PageWrapper>
       <Helmet>
-        <title>MUVANI – Thoughtful Gifts & More</title>
-        <meta name="description" content="Boutique gifts, curated with love. Shop romantic, personalized, and memorable presents from MUVANI." />
-        <link rel="canonical" href="https://muvani.store/#/" />
-        <meta property="og:title" content="MUVANI – Thoughtful Gifts & More" />
-        <meta property="og:description" content="Boutique gifts, curated with love. Shop romantic, personalized, and memorable presents from MUVANI." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://muvani.store/#/" />
-        <meta property="og:image" content="https://muvani.store/logo.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="MUVANI – Thoughtful Gifts & More" />
-        <meta name="twitter:description" content="Boutique gifts, curated with love. Shop romantic, personalized, and memorable presents from MUVANI." />
-        <meta name="twitter:image" content="https://muvani.store/logo.png" />
+        {/* unchanged */}
       </Helmet>
-      <section className="hero">
-        <div className="hero-inner">
-          <h1>Gifts that speak from the heart</h1>
-          <p>Thoughtful pieces, curated with love. Perfect for birthdays, anniversaries, and every little moment.</p>
-          <div style={{display:'flex', gap:12, justifyContent:'center'}}>
-            <a href="#/shop" className="btn btn-solid">Shop Featured</a>
-            <a href="#/gift-guide" className="btn btn-outline">Gift Guide</a>
+      
+      <Hero />
+      {/* <PatternStrip /> */}
+
+      <section className="section container why-grid">
+        <h2 className="section-title">Why MUVANI?</h2>
+
+        <div className="why-items">
+          <div className="why-item">
+            <span className="why-icon">🎁</span>
+            <h3>Gift-Ready Packaging</h3>
+            <p>Soft-touch boxes with a vibrant, modern palette.</p>
+          </div>
+
+          <div className="why-item">
+            <span className="why-icon">💛</span>
+            <h3>Warm & Creative</h3>
+            <p>Design that radiates emotion and presence.</p>
+          </div>
+
+          <div className="why-item">
+            <span className="why-icon">🌿</span>
+            <h3>Quality Materials</h3>
+            <p>Elegant textures and thoughtful craftsmanship.</p>
+          </div>
+
+          <div className="why-item">
+            <span className="why-icon">⚡</span>
+            <h3>Fast Shipping</h3>
+            <p>Packaged with care and shipped swiftly.</p>
           </div>
         </div>
       </section>
-      <section className="section container">
-        <h2>Why MUVANI?</h2>
-        <p>Premium materials, elegant packaging, and a warm, modern palette. Designed to be gifted right out of the box.</p>
-      </section>
-    </div>
-  )
+    </PageWrapper>
+  );
 }
-

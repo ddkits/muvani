@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Home from './pages/Home'
-// import Shop from './pages/Shop'
+import Shop from './pages/Shop'
 import About from './pages/About'
 import GiftGuide from './pages/GiftGuide'
 import FAQ from './pages/FAQ'
@@ -18,7 +18,7 @@ export default function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/shop" element={<Shop />} /> */}
+        <Route path="/shop" element={<Shop />} />
         <Route path="/about" element={<About />} />
         <Route path="/gift-guide" element={<GiftGuide />} />
         <Route path="/faq" element={<FAQ />} />

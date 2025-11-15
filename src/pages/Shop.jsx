@@ -1,9 +1,10 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
 import { products } from './products'
-export default function Shop(){
+import "./shop.css"
+export default function Shop() {
   return (
-    <div className="section">
+    <div className="section shop-page">
       <Helmet>
         <title>Shop – MUVANI</title>
         <meta name="description" content="Explore curated gifts and romantic sets from MUVANI." />
@@ -18,10 +19,27 @@ export default function Shop(){
         <meta name="twitter:description" content="Explore curated gifts and romantic sets from MUVANI." />
         <meta name="twitter:image" content="https://muvani.store/logo.png" />
       </Helmet>
-      <div className="container"><h2>Shop</h2></div>
-      <section className="grid">
-        {products.map(p => (
-          <article className="card" key={p.id}>
+  {/* ⭐ MODERN ANIMATED HERO */}
+      <div className="shop-hero modern-hero">
+        <img
+          src="/images/muvani-store-hero.png"
+          alt="Muvani Store"
+          className="shop-hero-img zoom-in"
+        />
+
+        <div className="hero-overlay blur-glass slide-up">
+          <h1>Discover Beautiful Gifts</h1>
+          <p>Your one-stop shop for curated romantic & thoughtful items.</p>
+        </div>
+      </div>
+
+      <div className="container">
+        <h2 className="shop-title">Shop</h2>
+      </div>
+
+      <section className="grid fade-up">
+        {products.map((p) => (
+          <article className="card card-animate" key={p.id}>
             <img src={p.image} alt={p.name} loading="lazy" />
             <div className="card-body">
               <h3>{p.name}</h3>
@@ -34,4 +52,3 @@ export default function Shop(){
     </div>
   )
 }
-
